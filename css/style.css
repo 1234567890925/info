@@ -1,0 +1,468 @@
+/* Global Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #1c1c1e; /* Dark gray text */
+    background-color: #f5f5f7; /* Light gray background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff; /* White background */
+    border-bottom: 1px solid #d2d2d7; /* Subtle bottom border */
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Center the Navbar Links */
+.navbar .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Navbar Links */
+.navbar .nav-link {
+    color: #1c1c1e; /* Dark gray text */
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 0 8px;
+    transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #0071e3; /* Apple blue hover effect */
+}
+
+/* Active Tab */
+.navbar .nav-link.active {
+    border-bottom: 2px solid #0071e3; /* Blue underline for active tab */
+}
+
+/* Tab Content */
+.tab-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.tab-content h1, .tab-content h2, .tab-content h3, .tab-content h4, .tab-content h5, .tab-content h6 {
+    font-weight: 600;
+    color: #1c1c1e;
+}
+
+.tab-content p {
+    line-height: 1.6;
+    color: #515154;
+}
+
+/* Project Cards */
+.project-link {
+    text-decoration: none;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #d2d2d7;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    margin: 20px;
+    max-width: 320px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1c1c1e;
+}
+
+.card-text {
+    color: #515154;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Center Project Cards */
+#projects .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Buttons (if any) */
+.button {
+    display: inline-block;
+    background-color: #0071e3;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #005bb5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        margin: 0 5px;
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    .tab-content {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    .card {
+        margin: 15px auto;
+        max-width: 90%;
+    }
+}
+/* Existing CSS */
+
+/* ... [Your existing CSS] ... */
+
+/* New CSS to center content */
+
+/* Center content in the Me tab */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Center content in the Education tab */
+.education-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Center content in the Experience tab */
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Center content in the Skills tab */
+.skills-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Center the content within the row */
+.skills-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Center text within columns */
+.skills-section .col-md-6 {
+    text-align: center;
+}
+
+.row.align-items-center {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.col-md-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Project Cards */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #d2d2d7;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    margin: 10px auto;
+    max-width: 100%;
+    min-height: 350px; /* Ensures a minimum height */
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1c1c1e;
+}
+
+.card-text {
+    color: #515154;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #0071e3;
+    border: none;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #005bb5;
+}
+.timeline-icon img {
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* Profile Image Styling */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Circular Image */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px auto; /* Center the image and add bottom margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Designation Style */
+.designation {
+    font-size: 1.2rem;
+    color: #666666;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Button Styling for Social Links */
+.button {
+    display: inline-block;
+    background-color: #0071e3;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 5px 5px; /* Adjusted for better spacing */
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #005bb5;
+}
+
+/* Ensure content is styled appropriately */
+.content {
+    max-width: 1200px; /* Adjusted to match container */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments for the Me Tab */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 15px;
+    }
+
+    .designation {
+        font-size: 1rem;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        margin: 5px 3px;
+    }
+}
+
+/* Enhanced Content Styling */
+.content {
+    max-width: 1200px; /* Adjusted to match container */
+    margin: 40px auto;
+    padding: 40px 20px; /* Increased top padding */
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensures that the padding adds space inside the border */
+}
+
+/* Responsive Adjustments for the Me Tab */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 15px;
+    }
+
+    .designation {
+        font-size: 1rem;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        margin: 5px 3px;
+    }
+
+    .content {
+        padding: 20px 15px; /* Reduced padding for smaller screens */
+    }
+}
+
+/* Project Card Images */
+.card img {
+    width: 100%; /* Ensures the image is responsive and fills the card */
+    height: 150px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensures the image covers the area without distorting aspect ratio */
+    border-top-left-radius: 12px; /* Match the card's border-radius */
+    border-top-right-radius: 12px;
+}
+@media (max-width: 768px) {
+    .card img {
+        height: 100px; /* Slightly smaller height for mobile devices */
+    }
+}
+
+/* Experience Section Styling */
+
+/* Reduce the size of logos on individual experience pages */
+.experience-logo {
+    width: 150px;  /* Adjust size as needed */
+    height: auto;   /* Maintain aspect ratio */
+    display: block;
+    margin: 20px auto; /* Center the logo */
+}
+
+
+/* Skills Section Styling */
+.skills-section {
+    max-width: 1200px;
+    margin: 40px auto; /* maintains horizontal centering */
+    padding: 60px 20px; /* increased top padding to 60px */
+    background-color: #ffffff; /* optional: adds a background color if needed */
+    border-radius: 12px; /* optional: adds rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* optional: adds a subtle shadow for depth */
+}
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 40px 15px; /* Reduced padding for smaller screens */
+    }
+}
+/* Make the entire project card clickable */
+
+
+.project-link:hover {
+    text-decoration: none; /* Ensures no underline on hover */
+}
+
+.project-link .card {
+    pointer-events: none; /* Prevents double-clicking when clicking buttons inside the card */
+}
+
+.project-link .btn {
+    pointer-events: all; /* Allow the button inside the card to remain clickable */
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping */
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+    gap: 20px; /* Adds spacing between cards */
+}
+
+/* Set a fixed height for the project cards */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #d2d2d7;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    margin: 10px auto;
+    max-width: 100%;
+    min-height: 350px; /* Ensures a minimum height */
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 100%; 
+}
+
+/* Ensure card body fills the remaining space */
+.card-body {
+    padding: 20px;
+    flex-grow: 1; /* Makes the card body expand equally */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.card-body .btn {
+    margin-top: auto; /* Pushes button to the bottom */
+}
+
+/* Adjust the height of the image */
+.card img {
+    width: 100%;
+    height: 150px; /* Fixed height for consistency */
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide to Redis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .step {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+            margin-bottom: 50px;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-left: 3px solid #3498db;
+            height: 30px;
+        }
+
+        .step-icon {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #3498db;
+            color: white;
+            border-radius: 50%;
+            padding: 10px;
+            font-size: 24px;
+        }
+
+        .button-link, .main-project-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-link:hover, .main-project-button:hover {
+            background-color: #2980b9;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #eaf6ff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .feature-list li::before {
+            content: '✓';
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            font-size: 20px;
+        }
+
+        .main-project-button {
+            width: 80%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Guide to Redis</h1>
+        <div class="intro">
+            <p>Enhancements to Redis</p>
+            <ul class="feature-list">
+                <li><strong>Automated Worker Management:</strong> Handles worker creation and process lifecycle seamlessly.</li>
+                <li><strong>Scalability:</strong> Adapts dynamically to workload changes.</li>
+                <li><strong>Optimized Performance:</strong> Ensures high-speed data processing.</li>
+                <li><strong>Standalone Solution:</strong> No external dependencies required.</li>
+                <li><strong>Python Integration:</strong> Built for seamless interaction with Python-based applications.</li>
+            </ul>
+        </div>
+        <div class="step" id="createWorkers">
+            <i class="step-icon fas fa-user-plus"></i>
+            <h2>Create Workers</h2>
+            <p>Define the number of workers and configure their idle time before execution.</p>
+            <button class="button-link" onclick="nextStep('setIdleTime')">Set Idle Time</button>
+        </div>
+        <div class="step" id="setIdleTime" style="display: none;">
+            <i class="step-icon fas fa-clock"></i>
+            <h2>Set Idle Time</h2>
+            <p>Optionally, set the maximum idle time for workers before auto-termination.</p>
+            <button class="button-link" onclick="nextStep('sendData')">Send Data</button>
+        </div>
+        <div class="step" id="sendData" style="display: none;">
+            <i class="step-icon fas fa-database"></i>
+            <h2>Send Data</h2>
+            <p>Push sample data to simulate task execution and monitor worker efficiency.</p>
+            <button class="button-link" onclick="nextStep('checkStatus')">Check Status</button>
+        </div>
+        <div class="step" id="checkStatus" style="display: none;">
+            <i class="step-icon fas fa-tasks"></i>
+            <h2>Monitor Worker Status</h2>
+            <p>Check the real-time status of active workers and their assigned tasks.</p>
+            <button class="button-link" onclick="resetSteps()">Restart</button>
+        </div>
+        <a href="yourprojecturl.com" class="main-project-button">Explore Full Project</a>
+    </div>
+    <script>
+        function nextStep(nextId) {
+            const currentStep = document.querySelector('.step:not([style*="display: none"])');
+            if (currentStep) currentStep.style.display = 'none';
+            const nextStep = document.getElementById(nextId);
+            if (nextStep) nextStep.style.display = 'block';
+        }
+
+        function resetSteps() {
+            const steps = document.querySelectorAll('.step');
+            steps.forEach(step => step.style.display = 'none');
+            steps[0].style.display = 'block';
+        }
+    </script>
+</body>
+</html>

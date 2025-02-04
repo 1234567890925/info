@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul class="nav" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="me-tab" data-bs-toggle="tab" href="#me" role="tab">Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="projects-tab" data-bs-toggle="tab" href="#projects" role="tab">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="education-tab" data-bs-toggle="tab" href="#education" role="tab">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="experience-tab" data-bs-toggle="tab" href="#experience" role="tab">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="skills-tab" data-bs-toggle="tab" href="#skills" role="tab">Skills</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="tab-content mt-4" id="myTabContent">
+            <div class="tab-pane fade show active" id="me" role="tabpanel">
+                <div class="content">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 text-center">
+                            <img src="images/portfolio.jpeg" alt="Rutuja Mandapmalvi" class="profile-img">
+                        </div>
+                        <div class="col-md-8">
+                            <h1>Rutuja Mandapmalvi</h1>
+                            <p class="designation">Software Engineer | AI Enthusiast</p>
+                            <p>I am a Professional Master's student in Electrical and Computer Engineering with a keen interest in software development, bringing over two years of practical experience in the field.</p>
+                            <div class="mt-3">
+                                <a href="https://github.com/1234567890925" class="button" target="_blank">GitHub</a>
+                                <a href="https://www.linkedin.com/in/rutuja-mandapmalvi/" class="button" target="_blank">LinkedIn</a>
+                                <a href="mailto:rutujm@uw.edu" class="button">Email Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Tab -->
+            <div class="tab-pane fade" id="projects" role="tabpanel">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card mb-4">
+                            <img src="images/f1-logo.png" class="img-fluid rounded-start" alt="F1-GPT">
+                            <div class="card-body">
+                                <h5 class="card-title">F1-GPT</h5>
+                                <p class="card-text">A chatbot using OpenAI models for answering queries related to Formula 1 motorsport.</p>
+                                <p><strong>Technologies:</strong> Next.js, OpenAI, DataStax</p>
+                                <a href="https://github.com/1234567890925/f1gpt" target="_blank" class="btn btn-primary">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card mb-4">
+                            <img src="images/food-cal.jpg" class="img-fluid rounded-start" alt="Food Estimation">
+                            <div class="card-body">
+                                <h5 class="card-title">Food Calories Estimation</h5>
+                                <p class="card-text">Image processing techniques to estimate food calorie count using CNN models.</p>
+                                <p><strong>Technologies:</strong> Python, CNN, OpenCV</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Tab -->
+            <div class="tab-pane fade" id="education" role="tabpanel">
+                <div class="education-section">
+                    <div class="degree">
+                        <h2>Professional Masters in Computer Engineering</h2>
+                        <h3>University of Washington</h3>
+                        <p class="date">Expected: August 2026</p>
+                        <p><strong>GPA:</strong> 4.0</p>
+                        <p><strong>Coursework: </strong>Machine Learning for Cybersecurity(WI25), Advanced Data Structures And Algorithms,
+                            Introduction to Database Systems(WI25)</p>
+                    </div>
+                    <div class="degree">
+                        <h2>Bachelor of Computer Engineering</h2>
+                        <h3>University of Pune</h3>
+                        <p class="date">September 2018 - April 2022</p>
+                        <p><strong>GPA:</strong> 3.6</p>
+                        <p><strong>Coursework: </strong>Software Computing and Optimal Algorithm, Software Testing and QA, Software Engineering and
+                            Project Management, Cloud Computing</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Tab -->
+            <div class="tab-pane fade" id="experience" role="tabpanel">
+                <div class="row d-flex flex-nowrap justify-content-center">
+                    <!-- Persistent Systems Experience -->
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="images/Persistent.jpg" class="img-fluid rounded-start" alt="Persistent Systems">
+                            <div class="card-body">
+                                <h5 class="card-title">Persistent Systems Limited</h5>
+                                <p class="card-text">Worked as a Software Engineer specializing in backend development, frontend solutions, and cloud integration.</p>
+                                <p><strong>Technologies:</strong> JavaScript, NodeJS, ExpressJS, ReactJS, Jenkins, Postman, SQL, AWS</p>
+                                <p><strong>Duration:</strong> January 2022 - March 2024</p>
+                                <a href="persistent.html" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Accenture Experience -->
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="images/Accenture.png" class="img-fluid rounded-start" alt="Accenture">
+                            <div class="card-body">
+                                <h5 class="card-title">Accenture</h5>
+                                <p class="card-text">Packaged App Development Analyst</p>
+                                <p><strong>Technologies:</strong> JavaScript, NodeJS, ExpressJS, AWS</p>
+                                <p><strong>Duration:</strong> May 2024 - September 2024</p>
+                                <a href="accenture.html" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- University of Washington Experience -->
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <img src="images/uw.png" class="img-fluid rounded-start" alt="University of Washington">
+                            <div class="card-body">
+                                <h5 class="card-title">University of Washington</h5>
+                                <p class="card-text">Working as a Student Associate</p>
+                                <p><strong>Duration:</strong> October 2024 - Present</p>
+                                <a href="uw.html" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content mt-3" id="myTabContent">
+                <!-- Skills Tab Content -->
+                <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">            
+                    <div class="skills-section">
+                        <div class="row">
+                            <!-- Frontend Skills -->
+                            <div class="col-md-6">
+                                <h3>Language</h3>
+                                <p>Python, JavaScript, HTML, CSS, SQL</p>
+                            </div>
+                            <!-- Backend Skills -->
+                            <div class="col-md-6">
+                                <h3>Backend</h3>
+                                <p>NodeJS, ExpressJS, NextJS, Jenkins, Postman, Git</p>
+                            </div>
+                            <!-- Programming Concepts -->
+                            <div class="col-md-6">
+                                <h3>Concepts</h3>
+                                <p>DBMS, OOPs, DSA, RESTful API</p>
+                            </div>
+                            <!-- Database Technologies -->
+                            <div class="col-md-6">
+                                <h3>Database Technologies</h3>
+                                <p>MySQL, ReactJS</p>
+                            </div>
+                            <!-- Cloud Technologies -->
+                            <div class="col-md-6">
+                                <h3>Cloud Technologies</h3>
+                                <p>AWS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Only Include One Bootstrap Script (Preferably Bootstrap 5) -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            
+            <!-- Fix jQuery Tab Switching -->
+            <script>
+                $(document).ready(function(){
+                    $('#myTab a').click(function (e) {
+                        e.preventDefault();
+                        $(this).tab('show');
+                    });
+                });
+            </script>            
+</body>
+</html>
