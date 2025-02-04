@@ -287,6 +287,12 @@ body {
     margin-bottom: 20px;
 }
 
+.greeting{
+    color: purple;
+    font-style: italic;
+    margin-bottom: 20px;  
+}
+
 /* Button Styling for Social Links */
 .button {
     display: inline-block;
