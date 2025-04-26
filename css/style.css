@@ -472,3 +472,39 @@ body {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
+.ripple-container {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+  .ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(0, 150, 255, 0.4);
+    transform: scale(0);
+    animation: ripple-animation 0.6s linear;
+  }
+  
+  @keyframes ripple-animation {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+  .butterfly {
+    position: fixed;
+    font-size: 5px;
+    pointer-events: none;
+    opacity: 1;
+    animation: flyAway 0.6s ease-out forwards;
+    z-index: 9999;
+  }
+  
+  @keyframes flyAway {
+    to {
+      opacity: 0;
+      transform: translateY(-20px) scale(1.5) rotate(720deg);
+    }
+  }
+  
